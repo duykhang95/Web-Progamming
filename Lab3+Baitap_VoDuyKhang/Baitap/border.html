@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Border</title>
+	<style type="text/css" media="screen">
+		.none-border{
+			border-style: none;
+		}
+		.hidden-boder{
+			border-style: hidden;
+		}
+		.dotted-border{
+			border-style: dotted;
+			background-image: url("https://www.zoo-berlin.de/fileadmin/_processed_/9/2/csm_KraeftigPusten_Pandageburtstag_MengMeng_ZooBerlin2017_a6b5c4b979.jpg");
+			width: 100%;
+			height: 700px;
+		}
+		.dashed-border{
+			border-style: dashed;
+			padding: 10px 20px 30px 40px;
+		}
+		.solid-border{
+			border-style: solid;
+			margin: 20px;
+			box-sizing: content-box;
+		}
+		.double-border{
+			border-style: double;
+			opacity: 0.5;
+		}
+		.groove-border{
+			border-style: groove;
+		}
+		.ridge-border{
+			border-style: ridge;
+		}
+		.inset-border{
+			border-style: inset;
+		}
+		.outset-border{
+			border-style: outset;
+		}
+		.many-option{
+			border-left: 1px solid yellow;
+			border-right: 2px double blue;
+			border-bottom: 3px dotted red;
+			border-top: 4px dashed green;
+			box-shadow: 
+			width: 100%;
+			height: 100px;
+		}
+		.box-shadow{
+			border-style: solid;
+			box-shadow: 10px 10px 5px grey;
+		}
+		.radius-border{
+			border-style: solid;
+			border-radius: 50%;
+			width: 100px;
+			height: 200px;
+		}
+		.option-radius{
+			border-style: solid;
+			border-radius: 50px 500px 20% 50%;
+			width: 100%;
+			height: 300px;
+		}
+		.one{
+			border: 1px solid red;
+			width: 100%;
+			height: 100px;
+		}
+		.two{
+			border-style: solid;
+			border-color: blue;
+			width: 75%;
+			display: inline-block;
+			box-sizing: border-box;
+			float: left;
+			/*margin: -1px;*/
+		}
+		.three{
+			border-style: solid;
+			width: 25%;
+			display: inline-block;
+			box-sizing: border-box;
+			float: right;
+			/*margin: -1px;*/
+		}
+		.position-test{
+			border: 3px solid blue;
+			position: relative;
+			width: 100%;
+			height: 300px;
+		}
+		.four{
+			border: solid;
+			width: 25%;
+			height: 50px;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+		}
+	</style>
+	
+</head>
+<body>
+	<p class="none-border">None-border</p>
+	<p class="hidden-border">Hidden-border</p>
+	<p class="dotted-border">Dotted-border</p>
+	<p class="dashed-border">Dashed-border</p>
+	<p class="solid-border">Solid-border</p>
+	<p class="double-border">Double-border</p>
+	<p class="groove-border">Groove-border</p>
+	<p class="ridge-border">Ridge-border</p>
+	<p class="inset-border">Inset-border</p>
+	<p class="outset-border">Outset-border</p>
+	<p class="many-option">Border-Style</p>
+	<p class="box-shadow">Box-Shadow</p>
+	<p class="radius-border">Radius-Border</p>
+	<p class="option-radius">Option-Radius</p>
+	<div class="one">
+		<p>Hello! How are you! fggfjfdhgkjfdhgfdkjhdkgfhkdhgdkjghdkjghdkjghksjfhgisudfyiwueyriweuyrisjhfksjdhfzmnc,xmcnvkjsdhfkshfksjdnvmcnvjksnhdkjfhsdkfmnxcmnvkjsfksn khjklhjklhjklhljkhddfhdfshdfsfsdjklfsdkljfsdjlfdljkfsdljksdfjklfsdfsdfsdjfsdsssdsdfgffdlkjgflkjgowirutwoirutowieupqoirqoirpqoewiurpqourqpieruiruqwoeruqwprowquripoqwurpoqurpqqorpu</p>
+		<div class="two">
+			<p>1</p>
+		</div>
+		<div class="three">
+			<p>2</p>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="position-test">
+		<p>CSS-Position</p>
+		<div class="four">
+			<p>3</p>
+		</div>
+	</div>
+	
+</body>
+</html>
