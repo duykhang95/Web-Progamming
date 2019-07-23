@@ -1,0 +1,27 @@
+table{
+	background-color: grey;
+	font-family: verdana;
+}
+
+.one{
+	color: white;
+	font-style: italic;
+}
+.name p{
+	color: red;
+}
+.name li{
+	color: green;
+}
+li{
+	color: yellow;
+}
+.mail{
+	color: white;
+}
+.two p{
+	color: yellow;
+}
+.answer{
+	color: red;
+}

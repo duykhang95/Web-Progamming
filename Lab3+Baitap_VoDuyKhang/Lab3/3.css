@@ -1,0 +1,48 @@
+body{
+	background-color: #778899;
+}
+
+.header-center{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+li{
+	list-style-type: none;
+	text-align: center;
+}
+
+header > nav> ul > li> a{
+	color: white;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.current{
+	background-color: grey;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.color-white{
+	color: white;
+	font-size: 30px;
+}
+
+footer p{
+	font-size: 12px;
+}
+
+footer p a{
+	text-decoration: none;
+	color: black;
+
+}
+
+.footer-center{
+	text-align: center;
+}
+
