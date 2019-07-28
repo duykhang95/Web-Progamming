@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Edwardian Script ITC";
+    src: url("fonts/EdwardianScriptITC.ttf");
+}
+body p{
+	font-style: normal;
+	color: #0094ff;
+	font-family: Consolas;
+}
+span{
+	font-weight: bold;
+}

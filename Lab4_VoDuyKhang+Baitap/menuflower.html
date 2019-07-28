@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FLOWER</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .menu{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+
+        }
+        ul li a{
+            text-decoration: none;
+            color: #00384d;
+            font-weight: bold;
+            font-size: 14px;
+            /*padding: 20px;*/
+        }
+        li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        .menu li{
+            position: relative;
+            width: 120px;
+            height: 40px;
+        }
+        .sub-menu{
+            display: none;
+            position: absolute;
+        }
+        .menu li:hover .sub-menu{
+            display: block;
+            background: grey;
+
+        }
+        .menu a:hover{
+            background: #f58220;
+            color: black;
+        }
+        li:hover > ul > li > a:hover{
+            background: grey;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="">TRANG CHỦ</a></li>
+        <li><a href="">HOA TẾT</a></li>
+        <li>
+            <a href="">CHỦ ĐỀ</a>
+            <ul class="sub-menu">
+                <li><a href="">HOA TÌNH YÊU</a></li>
+                <li><a href="">HOA CƯỚI</a></li>
+                <li><a href="">HOA KHAI TRƯƠNG</a></li>
+                <li><a href="">HOA SINH NHẬT</a></li>
+            </ul>
+    
+        </li>
+        <li>
+            <a href="">THIẾT KẾ</a>
+            <ul class="sub-menu">
+                <li><a href="">HOA BÓ</a></li>
+                <li><a href="">HOA GIỎ</a></li>
+                <li><a href="">HOA KỆ</a></li>
+                <li><a href="">HOA BÌNH</a></li>
+            </ul>
+    
+        </li>
+    </ul>
+</body>
+</html>
