@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+<script type="text/javascript">
+	//Tính tổng số lẻ từ 1 -> 100
+	// let n = 1,
+	// 	sum = 0;
+	// while(n <= 100) {
+	// 	if( n % 2 == 1){
+	// 		sum+= n;
+	// 	}
+	// 	n++;
+	// }
+	// document.writeln("Tổng số lẻ từ 1 đến 100 là: " + sum);
+	// alert(sum);
+	function inDanhSach(){
+		for(index in arr){
+	 	document.writeln(arr[index] + "<br>");
+		}
+	}
+
+	var arr = ["Nguyen Hoang Viet Tien", "Vo Duy Khang", "Tran C", "Nguyen Van A", "Le Van B"];
+	var index;
+	// for(index in arr){
+	// 	document.writeln(arr[index] + "<br>");
+	// }
+	inDanhSach()
+
+	document.writeln("<br>" + "Sau Sửa:" + "<br>");
+	arr[2] = "Tran Thi C";
+	// for(index in arr){
+	// 	document.writeln(arr[index] + "<br/>");
+	// }
+	inDanhSach()
+
+	document.writeln(" <br> Thêm chị Nguyen D <br>");
+	arr.push("Nguyen D");
+	// for(index in arr){
+	// 	document.writeln(arr[index] + "<br/>");
+	// }
+	inDanhSach()
+
+	document.writeln(" <br> Xóa chị Nguyen D <br>");
+	arr.pop("Nguyen D");
+	// for(index in arr){
+	// 	document.writeln(arr[index] + "<br/>");
+	// }
+	inDanhSach()
+
+	document.writeln(" <br> Thêm chị Nguyen D ở đầu mảng <br>");
+	arr.unshift("Nguyen D");
+	// for(index in arr){
+	// 	document.writeln(arr[index] + "<br/>");
+	// }
+	inDanhSach()
+
+	document.writeln(" <br> Xóa chị Nguyen D ở đầu mảng <br>");
+	arr.shift("Nguyen D");
+	// for(index in arr){
+	// 	document.writeln(arr[index] + "<br/>");
+	// }
+	inDanhSach()
+
+	var find_index = arr.indexOf("Tran Thi C");
+	document.writeln("<br>" + find_index);
+
+	var last_index = arr.lastIndexOf("Tran Thi C");
+	document.writeln("<br>" + last_index + "<br>");
+
+	
+
+
+
+
+	
+</script>
+<script type="text/javascript">
+	function checkTonTai(danhsach, arr) {
+		var findindex = arr.indexOf(danhsach);
+		if (findindex >= 0) {
+			document.writeln('Yes' + 'Co Trong Danh Sach');
+		} else {
+			document.writeln('No' + ' Ko Co Trong Danh Sach');
+		}
+	}
+	var arr = ["Nguyen Hoang Viet Tien", "Vo Duy Khang", "Tran C", "Nguyen Van A", "Le Van B"];
+	checkTonTai("<br>" + "Vo Duy Khang", arr);
+</script>
+
+
+
+
+<!-- <script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
+	var capitals, i;
+	capitals = [
+	    'Sofia',
+	    'Washington',
+	    'London',
+	    'Paris'
+	];
+
+	for (i in capitals) {
+    	console.log(capitals[i]);
+	}
+</script> -->
+</body>
+</html>
