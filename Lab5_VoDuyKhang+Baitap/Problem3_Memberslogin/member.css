@@ -1,0 +1,54 @@
+div {
+    background-color: #343434;
+    border-radius: 20px;
+    width: 650px;
+    height:310px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+}
+
+#logo {
+    float: left;
+    margin-left: 15px;
+}
+
+#login-button {
+    margin-left: 10px;
+    width: 50px;
+    height: 25px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+
+#login{
+    color: #FFF;
+    font-size: 22px;
+    margin-right: 15px;
+    margin-left: 15px;
+
+}
+
+header {
+    background-color: #343434;
+    border-bottom: 5px solid #2E2E2E;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 650px;
+    padding: 20px 0 45px 0;
+}
+
+h1 {
+    color: orange;
+    margin-left: 15px;
+}
+
+#text {
+    color: #A5A5A5;
+    margin: 15px;
+}
+
+#special {
+    color: #FFF;
+}
