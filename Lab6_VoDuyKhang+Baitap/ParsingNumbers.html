@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>str</td>
+			<td>parseInt(str)</td>
+			<td>parseFloat(str)</td>
+			<td>Number(str)</td>
+			<td>+str</td>
+			<td>str | 0</td>
+		</tr>
+		<tr>
+			<td>'1234'</td>
+			<td id='one'></td>
+			<td id='two'></td>
+			<td id='three'></td>
+			<td id='four'></td>
+			<td id='five'></td>
+		</tr>
+		<tr>
+			<td>'1238abc'</td>
+			<td id='mot'></td>
+			<td id='hai'></td>
+			<td id='ba'></td>
+			<td id='bon'></td>
+			<td id='nam'></td>
+		</tr>
+		<tr>
+			<td>'0.15'</td>
+			<td id='a'></td>
+			<td id='b'></td>
+			<td id='c'></td>
+			<td id='d'></td>
+			<td id='e'></td>
+		</tr>
+		<tr>
+			<td>'3.14ivan'</td>
+			<td id='f'></td>
+			<td id='g'></td>
+			<td id='h'></td>
+			<td id='i'></td>
+			<td id='j'></td>
+		</tr>
+		<tr>
+			<td>'Infinity'</td>
+			<td id='k'></td>
+			<td id='l'></td>
+			<td id='m'></td>
+			<td id='n'></td>
+			<td id='o'></td>
+		</tr>
+		<tr>
+			<td>'999999999999'</td>
+			<td id='p'></td>
+			<td id='q'></td>
+			<td id='r'></td>
+			<td id='s'></td>
+			<td id='t'></td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		document.getElementById("one").innerHTML = parseInt('1234');
+		document.getElementById("two").innerHTML = parseFloat('1234');
+		document.getElementById("three").innerHTML = Number('1234');
+		document.getElementById("four").innerHTML = +'1234';
+		document.getElementById("five").innerHTML = '1234' | 0;
+
+		document.getElementById("mot").innerHTML = parseInt('1238abc');
+		document.getElementById("hai").innerHTML = parseFloat('1238abc');
+		document.getElementById("ba").innerHTML = Number('1238abc');
+		document.getElementById("bon").innerHTML = +'1238abc';
+		document.getElementById("nam").innerHTML = '1238abc' | 0;
+
+		document.getElementById("a").innerHTML = parseInt('0.15');
+		document.getElementById("b").innerHTML = parseFloat('0.15');
+		document.getElementById("c").innerHTML = Number('0.15');
+		document.getElementById("d").innerHTML = +'0.15';
+		document.getElementById("e").innerHTML = '0.15' | 0;
+
+		document.getElementById("f").innerHTML = parseInt('3.14ivan');
+		document.getElementById("g").innerHTML = parseFloat('3.14ivan');
+		document.getElementById("h").innerHTML = Number('3.14ivan');
+		document.getElementById("i").innerHTML = +'3.14ivan';
+		document.getElementById("j").innerHTML = '3.14ivan' | 0;
+
+		document.getElementById("k").innerHTML = parseInt('Infinity');
+		document.getElementById("l").innerHTML = parseFloat('Infinity');
+		document.getElementById("m").innerHTML = Number('Infinity');
+		document.getElementById("n").innerHTML = +'Infinity';
+		document.getElementById("o").innerHTML = 'Infinity' | 0;
+
+		document.getElementById("p").innerHTML = parseInt('999999999999');
+		document.getElementById("q").innerHTML = parseFloat('999999999999');
+		document.getElementById("r").innerHTML = Number('999999999999');
+		document.getElementById("s").innerHTML = +'999999999999';
+		document.getElementById("t").innerHTML = '999999999999' | 0;
+
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		function all(arr){
+			var sum = 0, avg;
+			var min = arr[0];
+			var max = arr[0];
+			for( let index in arr){
+				if (min < arr[index] min = arr[index]);
+				if (max > arr[index] max = arr[index]);
+				sum += arr[index];
+				avg = sum/ arr.length;
+			}
+		}
+		var arr =['1','2','3','4'];
+		document.writeln(all(min));
+		document.writeln(all(max));	
+		document.writeln(all(sum));
+		document.writeln(all(avg));
+	</script>
+</body>
+</html>
