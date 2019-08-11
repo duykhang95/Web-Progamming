@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<script type="text/javascript">
+	// var person = {
+	// 	firstName :'Duy',
+	// 	lastName :'Khang',
+	// 	toString : function() {
+	// 		return this.firstName + ' ' + this.lastName;
+	// 	}
+	// }
+
+	// var person1 = {
+	// 	firstName :'Khang',
+	// 	lastName :'Vo',
+	// 	toString : function() {
+	// 		return this.firstName + ' ' + this.lastName;
+	// 	}
+	// }
+	// document.writeln(person.toString() + "<br>");
+	// document.writeln(person1.toString());
+
+	// function createName(_HovaTenDem, _Ten){
+	// 	var person = {};
+	// 	person.HovaTenDem = _HovaTenDem,
+	// 	person.Ten = _Ten;
+	// 	person.toPrint = function() {
+	// 		return this.HovaTenDem + " " + this.Ten;
+	// 	}
+	// 	return person;
+	// }
+	// var person1 = createName("Vo Duy", "Khang");
+	// var person2 = createName("NGuyen Thi", "N");
+	// document.writeln(person1.HovaTenDem + "<br>");
+
+	function Person(_surname, _name, _yearsOld, _sex, _hobby){
+		this.surname = _surname;
+		this.name = _name;
+		this.yearsOld = _yearsOld;
+		this.sex = _sex;
+		this.hobby = _hobby;
+		this.greeting = function(){
+			document.writeln('Hi! I\'m' + this.surname + this.name + this.yearsOld + this.sex + this.hobby);
+		}
+	}
+	var surname = new Person('Vo Duy');
+	var name = new Person('Khang');
+	var yearsOld = new Person('24');
+	var sex = new Person('Male');
+	var hobby = new Person ["Football","Travel", "Watch Movies"];
+</script>
+
+	
+</body>
+</html>
