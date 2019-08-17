@@ -1,0 +1,99 @@
+header{
+	position: relative;
+	left: 400px;
+}
+.input1{
+	position: absolute;
+	left: 300px;
+	top:25px;
+	width: 400px;
+	height: 30px;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.button1{
+	position: absolute;
+	left: 700px;
+	top:25px;
+	width: 50px;
+	height: 30px;
+	border: solid;
+	border-radius: 0px 20px 20px 0px ;
+	width: 40px;
+}
+small{
+	position: absolute;
+	top:60px;
+	left:320px;
+}
+.img2{
+	position: absolute;
+	right: 800px;
+	top:17px;
+}
+.header{
+	position: absolute;
+	right: 855px;
+	top:25px;
+	font-size: 20px;
+	line-height: 5px;
+	font-weight: bold;
+}
+.header a{
+	color: red;
+	text-decoration: none;
+}
+.header a:hover{
+	color: blue;
+	text-decoration:underline;
+}
+.header p{
+	color: blue;
+}
+
+.p1{
+	position: absolute;
+	right: 1000px;
+	top:90px;
+}
+.p1 a{
+	text-decoration: none;
+	color: blue;
+}
+.p1 a:hover{
+	color: blue;
+	text-decoration: none;
+}
+.p2{
+	position: absolute;
+	right: 800px;
+	top:85px;
+	background-color: blue;
+	width: 170px;
+	text-align: center;
+	height: 25px;
+}
+.p2 a{
+	color: white;
+	text-decoration: none;
+}
+.p2 a:hover{
+	text-decoration: none;
+	color: white;
+}
+.footer{
+	position: relative;
+	bottom: -1000px;
+}
+.footer1{
+	position: relative;
+	bottom: -1050px;
+}
+.footer1_1{
+	position: absolute;
+	left: -200px;
+}
+.footer1_2{
+	position: absolute;
+	right: -300px;
+}
