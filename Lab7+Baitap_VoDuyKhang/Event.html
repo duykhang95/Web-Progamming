@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Event</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+
+
+<body onload="LoadDuLieu()">
+    <div class="container">
+
+        <h1>Danh Sách Sinh Viên</h1>
+        <div class="Group-SV" >
+            <div class="row">
+                <div class="col-1"> STT </div>
+                <div class="col-4"> Họ và tên </div>
+                <div class="col-4">MSSV</div>
+                <div class="col-3">Chức Năng</div>
+
+            </div>
+            <div class="row">
+                <div class="col-1">1 </div>
+                <div class="col-6"> Nguyễn A </div>
+                <div class="col-5"> 22541</div>
+            </div>
+            <div class="row">
+                <div class="col-1">2 </div>
+                <div class="col-6">Nguyễn B</div>
+                <div class="col-5">15312 </div>
+            </div>
+        </div>
+    </div>
+    <form>
+		<div class="row" id="Group-New">
+			<div class="col-4" ><input type="text" name="HoTen" id="HoTen"></input></div>
+			<div class="col-4" ><input type="text" name="MSSV" id="MSSV"></input></div>
+			<div class="col-4" "><button id="new" type="button">Add new</button></div>
+		</div>
+    </form>
+
+
+
+    <script type="text/javascript">
+        function LoadDuLieu() {
+            // var _DSSV = [{
+            //         "HoTen": "Nguyễn A",
+            //         "MSSV": "22541"
+            //     },
+            //     {
+            //         "HoTen": "Nguyễn A2",
+            //         "MSSV": "15312"
+            //     },
+
+            // ]
+
+            $.post(
+            	"http://45.32.20.144/",
+            	{
+            		"DanhSach" : "SV",
+            	},
+            	function(_DSSV){
+            		for (let _index in _DSSV) {
+			            let STT = +_index + 1;
+			            let _str = '<div class="row"><div class="col-1 border border-dark">' + STT + ' </div> <div class="col-4 border border-dark"> ' + _DSSV[_index].HoTen + '</div><div class="col-4 border border-dark">' + _DSSV[_index].MSSV + ' </div><div class="col-3 border border-dark"><button type="button" class="btn-btn-warning Edit" onclick ="Edit(this)">Edit</button><button type="button" class="btn-btn-warning Del" onclick ="Del(this)">Del</button></div></div>';
+			            $(".Group-SV").append(_str);
+	            	}
+            	},
+            	 "json"  
+            );
+        }
+
+        $("#new").click(function(){
+        	var _HoTen = $("#HoTen").val();
+        	var _MSSV = $("#MSSV").val();
+        	let _str = '<div class="row"><div class="col-1 border border-dark">'  + ' </div> <div class="col-6 border border-dark"> ' + _HoTen + '</div><div class="col-5 border border-dark">' + _MSSV + ' </div></div>';
+
+        	$("#Group-New").after(_str);
+
+        });
+
+        function Del(e){
+        	var _confirm = confirm("Are you sure?");
+        	if (_confirm){
+        		$(e).parents(".row").remove();
+        	}
+        }
+
+        function Edit(e){
+        	_node = $(e).parents(".row").find(".col-4").first();
+        	
+        	}
+        }
+
+        function LoadDuLieu(){
+        	for(let _index in _DSS){
+        		let _str = `
+        		<div class="row">
+                <div class="col-1">${_STT}</div>
+                <div class="col-6">${_DSS[_index].HoTen} </div>
+                <div class="col-5"> 22541</div>
+            </div>
+            <div class="row">
+                <div class="col-1">2 </div>
+                <div class="col-6">Nguyễn B</div>
+                <div class="col-5">15312 </div>
+            </div>
+        	}
+        }
+            
+
+            // var _str = "";
+            // var _str = document.getElementById("Group-SV").innerHTML;
+            // for (let _index in _DSSV) {
+            //     let STT = +_index + 1;
+            //     let _str = '<div class="row"><div class="col-1">' + STT + ' </div> <div class="col-6"> ' + _DSSV[_index]
+            //         .HoTen + '</div><div class="col-5">' + _DSSV[_index].MSSV + ' </div></div>'
+            //     $(".Group-SV").append(_str);
+            // }
+        
+    </script>
+
+
+    
+</body>
+
+</html>
